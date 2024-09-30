@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# Parcial 1 - Programación con Tecnologías Web
+Este repositorio contiene el código fuente y los pasos necesarios para ejecutar la solución del parcial de la clase de Programación con Tecnologías Web utilizando React.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Requisitos Previos
+* Node.js
+* npm
 
-## Available Scripts
+## Instrucciones de Instalación y Ejecución
+### Clonar el repositorio
+~~~
+git clone https://github.com/itsmemanuu/Parcial1-web.git
+cd Parcial1-web
+~~~
 
-In the project directory, you can run:
+### Instalar Dependencias
+```
+npm install
+```
 
-### `npm start`
+### Ejecutar el Código
+~~~
+npm start
+~~~
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Decisiones de Diseño y Desarollo
+### En la clase:
+* Se comenzó por realizar el componente de login, pero el código implementado para la validación de campos tuvo errores, que consumieron más del tiempo necesario, por lo que se optó continuar.
+* Se implementó el enrutamiento
+* Se diseñó el schema y mock api de usuarios con ayuda de mockaroo
+* Para le bottom bar de usuario se utilizó el componente de boostrap Navbar con posición absoluta bottom en el que la información mostrada se encuentra en el componente Navbar.Text. En esta versión los tiempos están mostrados en minutos
+* Después de esto se diseño la sección del listado de cards, que, en la entrega de clase tiene un pequeño error pues tiene el componente onClick en la imagen y no el componente Card, por lo que el click no funciona correctamente.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### Después de la clase:
+* Después de la clase se corrigieron errores como la validación de campos y el click en la pagina principal.
+* Se implementó y conectó el MockAPI de las actividades
+* Se hicieron modificaciones de estilo
+* Se implementó internacionalización
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Componentes y Herramientas Utilizados
+- **React Hooks (useState, useEffect):** Permitieron manejar el estado local de los componentes y gestionar efectos secundarios como la actualización de datos
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **React Router:** Permite navegación
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React Bootstrap (Navbar, Button, Card, Col, Row, Modal, etc):** Optimiza la implementación de la interfaz gráfica.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Axios:** Facilita las peticiones API
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **React i18next:** Facilita internacionalización
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
